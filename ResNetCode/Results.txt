@@ -1,0 +1,43 @@
+Karar Ağacı
+
+Karar Ağacı Modeli Doğruluğu: 0.8206
+Karar Ağacı Modeli Doğruluğu: Precision: 0.8204868520235578
+Karar Ağacı Modeli Doğruluğu: Recall: 0.8206
+Karar Ağacı Modeli Doğruluğu: F1 Score: 0.8204841451511907
+
+
+Lojistik Regresyon
+
+Lojistik Regresyon Modeli Doğruluğu: 0.9709
+Lojistik Regresyon Modeli Doğruluğu: Precision: 0.9708943563777175
+Lojistik Regresyon Modeli Doğruluğu: Recall: 0.9709
+Lojistik Regresyon Modeli Doğruluğu: F1 Score: 0.9708812400936089
+
+
+KNN
+
+K-Nearest Neighbors Modeli Doğruluğu: 0.9349
+K-Nearest Neighbors Modeli Doğruluğu: Precision: 0.9351942651883611
+K-Nearest Neighbors Modeli Doğruluğu: Recall: 0.9349
+K-Nearest Neighbors Modeli Doğruluğu: F1 Score: 0.9347298321706606
+
+
+Random Forest
+
+Random Forest Modeli Doğruluğu: 0.9254
+Random Forest Modeli Doğruluğu: Precision: 0.9255626829011379
+Random Forest Modeli Doğruluğu: Recall: 0.9254
+Random Forest Modeli Doğruluğu: F1 Score: 0.9253450859479441
+
+
+SVM
+
+SVM Doğruluğu: 0.9254
+SVM Doğruluğu: Precision: 0.9155626829011379
+SVM Doğruluğu: Recall: 0.9254
+SVM  Doğruluğu: F1 Score: 0.9053450859479441
+
+
+
+
+

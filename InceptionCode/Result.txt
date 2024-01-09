@@ -1,0 +1,59 @@
+Karar Ağacı
+
+1875/1875 [==============================] - 89s 47ms/step
+313/313 [==============================] - 14s 42ms/step
+Karar Ağacı Modeli Doğruluğu: 0.7275
+Karar Ağacı Modeli Doğruluğu: Precision: 0.7271945100253966
+Karar Ağacı Modeli Doğruluğu: Recall: 0.7275
+Karar Ağacı Modeli Doğruluğu: F1 Score: 0.7271648242414643
+
+
+Lojistik Regresyon
+
+1875/1875 [==============================] - 85s 45ms/step
+313/313 [==============================] - 17s 45ms/step
+Lojistik Regresyon Modeli Doğruluğu: 0.9406
+Lojistik Regresyon Modeli Doğruluğu: Precision: 0.9406624254140683
+Lojistik Regresyon Modeli Doğruluğu: Recall: 0.9406
+Lojistik Regresyon Modeli Doğruluğu: F1 Score: 0.9405668433828321
+
+
+KNN
+
+1875/1875 [==============================] - 94s 50ms/step
+313/313 [==============================] - 16s 47ms/step
+K-En Yakın Komşu Modeli Doğruluğu: 0.9132
+K-En Yakın Komşu Modeli Doğruluğu: Precision: 0.9144972741969015
+K-En Yakın Komşu Modeli Doğruluğu: Recall: 0.9132
+K-En Yakın Komşu Modeli Doğruluğu: F1 Score: 0.912876835790885
+
+
+Random Forest
+
+
+1875/1875 [==============================] - 83s 44ms/step
+313/313 [==============================] - 13s 39ms/step
+Random Forest Modeli Doğruluğu: 0.8814
+Random Forest Modeli Doğruluğu: Precision: 0.8809430752063004
+Random Forest Modeli Doğruluğu: Recall: 0.8814
+Random Forest Modeli Doğruluğu: F1 Score: 0.8806978895144381
+
+
+SVM 
+
+
+
+1875/1875 [==============================] - 76s 40ms/step
+313/313 [==============================] - 13s 40ms/step
+SVM Modeli Doğruluğu: 0.9504
+SVM Modeli Doğruluğu: Precision: 0.9505161632226136
+SVM Modeli Doğruluğu: Recall: 0.9504
+SVM Modeli Doğruluğu: F1 Score: 0.9503625571163635
+
+
+InceptionV3 modeli, karar ağacı algoritması ile eğitildiğinde orta düzeyde bir doğruluk elde eder. Precision, Recall ve F1 Score birbirine yakın değerlere sahiptir, bu da modelin dengeli bir performans sergilediğini gösterir.
+Lojistik regresyon, InceptionV3 modeli ile eğitildiğinde yüksek doğruluk elde eder. Precision, Recall ve F1 Score değerleri birbirine çok yakın olduğu için modelin güvenilir ve dengeli bir performans gösterdiği söylenebilir.
+KNN modeli, InceptionV3 ile eğitildiğinde yüksek doğruluk elde eder. Precision, Recall ve F1 Score değerleri birbirine yakın, bu da modelin genel olarak dengeli bir performans gösterdiğini gösterir.
+Rastgele orman modeli, InceptionV3 ile eğitildiğinde yüksek doğruluk gösterir. Precision, Recall ve F1 Score değerleri birbirine yakın, bu da modelin güvenilir bir performans sergilediğini gösterir.
+SVM modeli, InceptionV3 ile eğitildiğinde yüksek doğruluk elde eder. Precision, Recall ve F1 Score değerleri birbirine çok yakın olduğu için modelin güvenilir bir şekilde sınıflandırma yaptığı söylenebilir.
+Bu sonuçlar, InceptionV3 modelinin MNIST veri setinde genel olarak yüksek performans gösterdiğini ve farklı sınıflandırma algoritmalarıyla uyumlu sonuçlar verdiğini göstermektedir.

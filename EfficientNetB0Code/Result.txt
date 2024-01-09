@@ -1,0 +1,73 @@
+Karar Ağaçları
+
+1875/1875 [==============================] - 40s 20ms/step
+313/313 [==============================] - 7s 19ms/step
+EfficientNetB0 ile Karar Ağacı Modeli Doğruluğu: 0.7668
+EfficientNetB0 ile Karar Ağacı Modeli Doğruluğu: Precision: 0.7671052006832356
+EfficientNetB0 ile Karar Ağacı Modeli Doğruluğu: Recall: 0.7668
+EfficientNetB0 ile Karar Ağacı Modeli Doğruluğu: F1 Score: 0.7668151213178535
+
+
+Lojistik Regresyon
+
+1875/1875 [==============================] - 36s 19ms/step
+313/313 [==============================] - 7s 19ms/step
+EfficientNetB0 ile Lojistik Regresyon Modeli Doğruluğu: 0.6727
+EfficientNetB0 ile Lojistik Regresyon Modeli Doğruluğu: Precision: 0.6731613915760496
+EfficientNetB0 ile Lojistik Regresyon Modeli Doğruluğu: Recall: 0.6727
+EfficientNetB0 ile Lojistik Regresyon Modeli Doğruluğu: F1 Score: 0.6670801528118167
+
+
+KNN
+
+1875/1875 [==============================] - 36s 19ms/step
+313/313 [==============================] - 7s 18ms/step
+EfficientNetB0 ile K-Nearest Neighbors Modeli Doğruluğu: 0.6895
+EfficientNetB0 ile K-Nearest Neighbors Modeli Doğruluğu: Precision: 0.6887922761067211
+EfficientNetB0 ile K-Nearest Neighbors Modeli Doğruluğu: Recall: 0.6895
+EfficientNetB0 ile K-Nearest Neighbors Modeli Doğruluğu: F1 Score: 0.6867331351090605
+
+
+SVM
+
+1875/1875 [==============================] - 36s 19ms/step
+313/313 [==============================] - 7s 19ms/step
+EfficientNetB0 ile Support Vector Machine Modeli Doğruluğu: 0.1135
+EfficientNetB0 ile Support Vector Machine Modeli Doğruluğu: Precision: 0.01288225
+EfficientNetB0 ile Support Vector Machine Modeli Doğruluğu: Recall: 0.1135
+EfficientNetB0 ile Support Vector Machine Modeli Doğruluğu: F1 Score: 0.023138302649304
+
+
+Random Forest
+
+1875/1875 [==============================] - 36s 19ms/step
+313/313 [==============================] - 7s 18ms/step
+EfficientNetB0 ile Random Forest Modeli Doğruluğu: 0.8154
+EfficientNetB0 ile Random Forest Modeli Doğruluğu: Precision: 0.8149181194612163
+EfficientNetB0 ile Random Forest Modeli Doğruluğu: Recall: 0.8154
+EfficientNetB0 ile Random Forest Modeli Doğruluğu: F1 Score: 0.8145907474905327
+
+
+EfficientNetB0 modeli, karar ağacı algoritması ile eğitildiğinde orta düzeyde bir doğruluk elde eder. Precision, Recall ve F1 Score değerleri birbirine yakındır, bu da modelin dengeli bir performans gösterdiğini gösterir.
+Lojistik regresyon, EfficientNetB0 modeli ile eğitildiğinde düşük bir doğruluk elde eder. Precision, Recall ve F1 Score değerleri birbirine yakındır, ancak genel olarak düşük bir performans sergilediği söylenebilir.
+KNN modeli, EfficientNetB0 ile eğitildiğinde orta düzeyde bir doğruluk elde eder. Precision, Recall ve F1 Score değerleri birbirine yakındır, bu da modelin dengeli bir performans gösterdiğini gösterir.
+SVM modeli, EfficientNetB0 ile eğitildiğinde çok düşük bir doğruluk elde eder. Precision, Recall ve F1 Score değerleri düşük, bu da modelin sınıflandırma konusunda zayıf bir performans sergilediğini gösterir
+Rastgele orman modeli, EfficientNetB0 ile eğitildiğinde orta düzeyde bir doğruluk elde eder. Precision, Recall ve F1 Score değerleri birbirine yakındır, bu da modelin dengeli bir performans gösterdiğini gösterir.
+EfficientNetB0 modeli, farklı sınıflandırma algoritmaları ile kullanıldığında değişen performanslar sergilemektedir. Yüksek performans gösteren Rastgele Orman'a karşın, düşük performans gösteren SVM modeli dikkat çekmektedir. Modelin farklı algoritmalar ile nasıl tepki verdiğini anlamak, modelin güçlü ve zayıf yönlerini belirlemek açısından önemlidir.
+
+
+
+RESULTLL
+
+Bu çalışma, MNIST El Yazısı Veri Seti üzerinde farklı makine öğrenimi algoritmalarının, özellikle de derin öğrenme temsilcisi olan Convolutional Neural Networks (CNN) tabanlı mimarilerin performansını değerlendirmeye odaklanmıştır.
+VGG16 modeli, yüksek doğruluk ve diğer metriklerde başarılı bir performans göstermiştir. Fakat eğitim ve değerlendirme süreleri diğer modellere göre daha uzun olabilir. Bu model, karmaşık öğrenme yetenekleri ile dikkat çeker.
+InceptionV3 modeli, yüksek doğruluk ve F1 skoru ile dikkat çekerken, diğer metriklerde de güçlü bir performans sergilemiştir. Bu model, karmaşık görevleri etkili bir şekilde öğrenme yeteneği ile öne çıkar.
+MobileNetV2, diğer modellere göre daha düşük doğruluk ve metrik değerlerine sahiptir. Ancak, daha hafif bir model olması nedeniyle uygulama gereksinimlerine uygun olabilir.
+ ResNet, yüksek doğruluk ve diğer metriklerde etkileyici bir performans göstermiştir. Derin ağlarda ortaya çıkan kaybolan gradyan sorununu aşmasıyla bilinir.
+  EfficientNetB0, özellikle Random Forest ve K-Nearest Neighbors (KNN) algoritmalarıyla eğitildiğinde etkileyici bir doğruluk göstermiştir. Ancak, SVM ile eğitildiğinde düşük bir performans sergilemiştir.
+  Karar ağacı, diğer modellere göre daha düşük bir performans sergilemiştir. Ancak, hızlı eğitim süreleri ve yüksek yorumlanabilirlik özellikleri ile avantajlar sunar.
+  Lojistik regresyon, genel olarak yüksek doğruluk ve diğer metriklerde etkileyici bir performans sergilemiştir. Basit yapısı ve yüksek hızlı eğitimi ile öne çıkar.
+  KNN modeli, özellikle ResNet ve EfficientNetB0 modelleri ile eğitildiğinde yüksek doğruluk elde etmiştir. Ancak, diğer modellerle kullanıldığında performansı düşer.
+   SVM, diğer modellere göre daha değişken bir performans sergilemiştir. Bazı durumlarda yüksek doğruluk elde ederken, diğer durumlarda düşük performans gösterebilir.
+    Rastgele orman, genel olarak yüksek doğruluk ve diğer metriklerde etkileyici bir performans göstermiştir. Ensemble özellikleri ile öne çıkar.
+	Bu çalışma, MNIST veri seti üzerinde yapılan kapsamlı bir değerlendirme ile farklı algoritmaların performansını ortaya koymaktadır. 

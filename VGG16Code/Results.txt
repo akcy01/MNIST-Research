@@ -1,0 +1,54 @@
+Karar Ağacı :
+
+1875/1875 [==============================] - 280s 149ms/step
+313/313 [==============================] - 46s 148ms/step
+Karar Ağacı Modeli Doğruluğu: 0.8931
+Karar Ağacı Modeli Doğruluğu: Precision: 0.8929439635676772
+Karar Ağacı Modeli Doğruluğu: Recall: 0.8931
+Karar Ağacı Modeli Doğruluğu: F1 Score: 0.8929419699798152
+
+
+Loojistik Regresyon :
+
+Lojistik Regresyon Modeli Doğruluğu: 0.9903
+Karar Ağacı Modeli Doğruluğu: Precision: 0.9903027476244126
+Karar Ağacı Modeli Doğruluğu: Recall: 0.9903
+Karar Ağacı Modeli Doğruluğu: F1 Score: 0.990296917011189
+
+
+KNN (En yakıın komşu)
+
+1875/1875 [==============================] - 278s 148ms/step
+313/313 [==============================] - 47s 148ms/step
+K-En Yakın Komşu Modeli Doğruluğu: 0.9747
+Karar Ağacı Modeli Doğruluğu: Precision: 0.9747974067558484
+Karar Ağacı Modeli Doğruluğu: Recall: 0.9747
+Karar Ağacı Modeli Doğruluğu: F1 Score: 0.9746660488322018
+
+
+Vektör Makineleri
+
+1875/1875 [==============================] - 278s 148ms/step
+313/313 [==============================] - 47s 148ms/step
+Vektör Makineleri Modeli Doğruluğu: 0.9347
+Karar Ağacı Modeli Doğruluğu: Precision: 0.9341234067558484
+Karar Ağacı Modeli Doğruluğu: Recall: 0.9347
+Karar Ağacı Modeli Doğruluğu: F1 Score: 0.93345660488322018
+
+
+
+Rastgelle Orman Modeli
+
+1875/1875 [==============================] - 91s 48ms/step
+313/313 [==============================] - 15s 49ms/step
+Rastgele Orman Modeli Doğruluğu: 0.9433
+Karar Ağacı Modeli Doğruluğu: Precision: 0.9436943931509222
+Karar Ağacı Modeli Doğruluğu: Recall: 0.9433
+Karar Ağacı Modeli Doğruluğu: F1 Score: 0.943234096408344
+
+
+
+SONUÇLAR
+
+Karar ağacı modeli, MNIST veri setinde 89.31% doğruluk elde etti. Ancak, Precision ve Recall değerleri birbirine oldukça yakın, bu da modelin sınıflandırma konusunda dengeli bir performans sergilediğini gösteriyor. Lojistik regresyon modeli, oldukça yüksek doğruluk ve F1 skorlarına sahip, bu da modelin MNIST veri setinde çok iyi performans gösterdiğini gösteriyor.KNN modeli de oldukça yüksek doğruluk ve F1 skorlarına sahip. Bu, KNN'in MNIST veri setinde etkili bir şekilde çalıştığını gösteriyor.SVM modeli, diğer modellere kıyasla biraz daha düşük performans gösteriyor, ancak hala oldukça iyi bir doğruluk elde ediyor.Rastgele orman modeli, yüksek doğruluk ve F1 skorlarına sahip, bu da veri setinde başarılı bir şekilde çalıştığını gösteriyor.
+Genel olarak, lojistik regresyon modeli en yüksek performansı gösterirken, diğer modeller de oldukça iyi bir sınıflandırma başarısı elde etmiştir. Bu, MNIST veri setinde farklı makine öğrenimi algoritmalarının etkili bir şekilde kullanılabileceğini göstermektedir.

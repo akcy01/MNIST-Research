@@ -1,0 +1,57 @@
+Karar Ağacı
+
+Weights for input shape (224, 224) will be loaded as the default.
+1875/1875 [==============================] - 22s 12ms/step
+313/313 [==============================] - 4s 12ms/step
+MobileNetV2 ile Karar Ağacı Modeli Doğruluğu: 0.6115
+MobileNetV2 ile Karar Ağacı Modeli Doğruluğu: Precision: 0.6115507982425774
+MobileNetV2 ile Karar Ağacı Modeli Doğruluğu: Recall: 0.6115
+MobileNetV2 ile Karar Ağacı Modeli Doğruluğu: F1 Score: 0.61132194619468
+
+
+Lojistik regreson
+
+1875/1875 [==============================] - 20s 11ms/step
+313/313 [==============================] - 4s 10ms/step
+MobileNetV2 ile Lojistik Regresyon Modeli Doğruluğu: 0.6702
+MobileNetV2 ile Lojistik Regresyon Modeli Doğruluğu: Precision: 0.6714810545072111
+MobileNetV2 ile Lojistik Regresyon Modeli Doğruluğu: Recall: 0.6702
+MobileNetV2 ile Lojistik Regresyon Modeli Doğruluğu: F1 Score: 0.6672450817465332
+
+
+KNN
+
+1875/1875 [==============================] - 19s 10ms/step
+313/313 [==============================] - 4s 10ms/step
+MobileNetV2 ile K-Nearest Neighbors Modeli Doğruluğu: 0.6789
+MobileNetV2 ile K-Nearest Neighbors Modeli Doğruluğu: Precision: 0.6814970397684801
+MobileNetV2 ile K-Nearest Neighbors Modeli Doğruluğu: Recall: 0.6789
+MobileNetV2 ile K-Nearest Neighbors Modeli Doğruluğu: F1 Score: 0.6777741981433818
+
+
+SVM
+
+1875/1875 [==============================] - 22s 11ms/step
+313/313 [==============================] - 4s 11ms/step
+MobileNetV2 ile Support Vector Machine Modeli Doğruluğu: 0.7242
+MobileNetV2 ile Support Vector Machine Modeli Doğruluğu: Precision: 0.7280839419753946
+MobileNetV2 ile Support Vector Machine Modeli Doğruluğu: Recall: 0.7242
+MobileNetV2 ile Support Vector Machine Modeli Doğruluğu: F1 Score: 0.7233653774660558
+
+
+
+Random Forest
+
+1875/1875 [==============================] - 21s 11ms/step
+313/313 [==============================] - 4s 11ms/step
+MobileNetV2 ile Random Forest Modeli Doğruluğu: 0.741
+MobileNetV2 ile Random Forest Modeli Doğruluğu: Precision: 0.7388382424098011
+MobileNetV2 ile Random Forest Modeli Doğruluğu: Recall: 0.741
+MobileNetV2 ile Random Forest Modeli Doğruluğu: F1 Score: 0.738859051040355
+
+
+MobileNetV2 ile karar ağacı modeli, MNIST veri setinde 61.15% doğruluk elde etti. Precision, Recall ve F1 skorları birbirine oldukça yakın, ancak genel doğruluk düşük.
+Lojistik regresyon modeli, MobileNetV2 ile eğitildiğinde daha yüksek doğruluk elde etmiştir, ancak yine de doğruluk seviyesi düşük.
+KNN modeli de diğer modellere göre biraz daha yüksek doğruluk elde etmiştir, ancak hala düşük.
+MobileNetV2 ile eğitilen SVM modeli, diğer modellere kıyasla daha yüksek doğruluk elde etmiştir.
+Random Forest modeli, MobileNetV2 ile eğitildiğinde en yüksek doğruluğa sahiptir. Ancak, genel olarak tüm modeller, MobileNetV2'nin MNIST veri setindeki performansının diğer modellere göre daha düşük olduğunu göstermektedir. MobileNetV2'nin özellikle MNIST gibi basit yapıdaki veri setlerinde daha karmaşık modellere gerek olmayabilir.
